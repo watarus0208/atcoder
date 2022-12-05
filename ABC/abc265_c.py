@@ -28,4 +28,6 @@ while 1:
             break
         j += 1
 
-print(i+1, j+1)
+print(i+1, j)
+
+
