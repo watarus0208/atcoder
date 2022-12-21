@@ -1,17 +1,21 @@
 S = input()
 T = input()
 
-cnt = 0
-for i, s in enumerate(S):
-    if i == 0:
-        if S[0] != T[0]:
+if len(S) > len(T):
+    print('No')
+    exit()
+
+i = 0
+while i<len(S):
+    if S[i] != T[i]:
+        if T[i-2] == T[i-1] == T[i]:
+            T = T[:i-1] + T[i:]
+        else:
             print('No')
             exit()
-    elif S[i-1] == S[i]:
-        j = i 
-        cnt = 1 
-        while True:
-            if T[j] == T[j+cnt]:
-                cnt += 1
-
-                
+    else:
+        i += 1
+if S == T:
+    print('Yes')
+else:
+    print('No')
