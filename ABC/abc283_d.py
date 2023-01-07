@@ -19,6 +19,6 @@ for s in S:
             if t == '(':
                 break
             elif t != '(':
-                c.remove(t)        
+                c.remove(t)
 
-print('Yes')            
+print('Yes')
