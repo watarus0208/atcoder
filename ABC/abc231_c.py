@@ -11,11 +11,12 @@ for _ in range(q):
         continue
     i = 0
     l = 0
-    r = len(a) 
+    r = len(a)
     while r-l > 1:
-        i = int((l+r)/2)
+        i = (l+r)//2
         if a[i] >= x:
             r = i
         else:
             l = i 
     print(n - r)
+    

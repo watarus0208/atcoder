@@ -8,3 +8,7 @@ for i in range(N):
         print(amax)
     else:
         print(max(A[:i] + A[i+1:]))
+        
+"""
+最大値とその次の値を格納する
+"""
